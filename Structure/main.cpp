@@ -9,7 +9,7 @@
 //#include "SequenceTable.hpp"
 //#include "DynamicSequenceTable.hpp"
 //#include "HeadLinkList.hpp"
-#include "SequenceQueue.hpp"
+#include "queue/SequenceQueue.hpp"
 //using namespace::std;
 
 int main() {
