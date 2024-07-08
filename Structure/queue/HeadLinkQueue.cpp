@@ -5,7 +5,7 @@
 //  Created by Yusuf Mike  on 7/8/24.
 //
 
-#include "LinkQueue.hpp"
+#include "HeadLinkQueue.hpp"
 
 void initHeadLinkQueue(HeadLinkQueue &Q){
     Q.front=Q.rear=(LNode *)malloc(sizeof(LNode));
