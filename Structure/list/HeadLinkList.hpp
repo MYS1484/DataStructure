@@ -9,22 +9,22 @@
 #define HeadLinkList_hpp
 
 #include <iostream>
-typedef int ElementType;
+typedef int ElemType;
 
 #define MaxSize 10   // define maxinum length
 typedef struct LNode{
-    ElementType data;
+    ElemType data;
     struct LNode *next;
 }LNode, *HeadLinkList;
 
 bool InitHeadList(HeadLinkList &L);
-bool InsertHeadList(HeadLinkList &L, int i,ElementType e);
-bool DeleteHeadList(HeadLinkList &L, int i,ElementType &e);
-bool InsertNextNode(LNode *p, ElementType e);
-bool InsertPriorNode(LNode *p, ElementType e);
+bool InsertHeadList(HeadLinkList &L, int i,ElemType e);
+bool DeleteHeadList(HeadLinkList &L, int i,ElemType &e);
+bool InsertNextNode(LNode *p, ElemType e);
+bool InsertPriorNode(LNode *p, ElemType e);
 
 LNode * GetHeadElem(HeadLinkList L, int i);
-LNode * LocateHeadElem(HeadLinkList L, ElementType e);
+LNode * LocateHeadElem(HeadLinkList L, ElemType e);
 int Length(HeadLinkList L);
 
 

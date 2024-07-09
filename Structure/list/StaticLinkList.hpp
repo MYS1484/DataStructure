@@ -10,11 +10,11 @@
 
 #define MaxSize 10
 #include <iostream>
-typedef int ElementType;
+typedef int ElemType;
 
 // 循环链表
 struct Node {
-    ElementType data;
+    ElemType data;
     int next;
 };
 typedef struct Node SLinkList[MaxSize];

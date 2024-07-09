@@ -56,7 +56,7 @@ bool InitCycleDoubleLinkList(DLinkList &L){
     return true;
 }
 
-bool isEmptyCycleDoubleLinkList(DLinkList L){
+bool IsEmptyCycleDoubleLinkList(DLinkList L){
     if (L->next == L){
         return true;
     }else{
@@ -64,7 +64,7 @@ bool isEmptyCycleDoubleLinkList(DLinkList L){
     }
 }
 
-bool isTailCycleDoubleLinkList(DLinkList L, DNode *p){
+bool IsTailCycleDoubleLinkList(DLinkList L, DNode *p){
     if (p->next==L){
         return true;
     }else{

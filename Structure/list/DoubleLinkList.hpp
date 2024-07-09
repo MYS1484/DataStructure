@@ -9,10 +9,10 @@
 #define DoubleLinkList_hpp
 
 #include <iostream>
-typedef int ElementType;
+typedef int ElemType;
 
 typedef struct DNode{
-    ElementType data;
+    ElemType data;
     struct DNode *prior, *next;
 }DNode, *DLinkList;
 
@@ -22,6 +22,6 @@ bool DestoryList(DLinkList &L);
 bool DeleteNextDNode(DNode *p);
 
 bool InitCycleDoubleLinkList(DLinkList &L);
-bool isEmptyCycleDoubleLinkList(DLinkList L);
-bool isTailCycleDoubleLinkList(DLinkList L, DNode *p);
+bool IsEmptyCycleDoubleLinkList(DLinkList L);
+bool IsTailCycleDoubleLinkList(DLinkList L, DNode *p);
 #endif /* DoubleLinkList_hpp */

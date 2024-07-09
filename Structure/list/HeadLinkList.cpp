@@ -16,7 +16,7 @@ bool InitHeadList(HeadLinkList &L){
     return true;
 }
 
-bool InsertHeadList(HeadLinkList &L, int i,ElementType e){
+bool InsertHeadList(HeadLinkList &L, int i,ElemType e){
     if (i<1){
         return false;
     }
@@ -36,7 +36,7 @@ bool InsertHeadList(HeadLinkList &L, int i,ElementType e){
     return true;
 }
 
-bool DeleteHeadList(HeadLinkList &L, int i,ElementType &e){
+bool DeleteHeadList(HeadLinkList &L, int i,ElemType &e){
     if (i<1){
         return false;
     }
@@ -57,7 +57,7 @@ bool DeleteHeadList(HeadLinkList &L, int i,ElementType &e){
     return true;
 }
 
-bool InsertNextNode(LNode *p, ElementType e){
+bool InsertNextNode(LNode *p, ElemType e){
     if (p==NULL){
         return true;
     }
@@ -71,7 +71,7 @@ bool InsertNextNode(LNode *p, ElementType e){
     return true;
 }
 
-bool InsertPriorNode(LNode *p, ElementType e){
+bool InsertPriorNode(LNode *p, ElemType e){
     if (p==NULL){
         return true;
     }
@@ -99,7 +99,7 @@ LNode * GetHeadElem(HeadLinkList L, int i){
     return p;
 }
 
-LNode * LocateHeadElem(HeadLinkList L, ElementType e){
+LNode * LocateHeadElem(HeadLinkList L, ElemType e){
     LNode *p=L;
     while (p!= NULL && p->data != e) {
         p = p->next;
