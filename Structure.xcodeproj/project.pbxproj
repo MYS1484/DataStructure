@@ -14,6 +14,8 @@
 		C65C61DD2C33E6E900810FEA /* SequenceQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C65C61DB2C33E6E900810FEA /* SequenceQueue.cpp */; };
 		C65C61E02C3BEBC300810FEA /* HeadLinkQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C65C61DE2C3BEBC300810FEA /* HeadLinkQueue.cpp */; };
 		C65C61E32C3CD4AC00810FEA /* LinkQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C65C61E12C3CD4AC00810FEA /* LinkQueue.cpp */; };
+		C65C61E62C3D3C8500810FEA /* DynamicSequenceString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C65C61E42C3D3C8500810FEA /* DynamicSequenceString.cpp */; };
+		C65C61E92C3D3E7000810FEA /* LinkString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C65C61E72C3D3E7000810FEA /* LinkString.cpp */; };
 		C693AECB2C21333F00CFAF67 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C693AECA2C21333F00CFAF67 /* main.cpp */; };
 		C693AED32C251A0600CFAF67 /* SequenceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C693AED12C251A0600CFAF67 /* SequenceList.cpp */; };
 		C693AED62C2520CC00CFAF67 /* DynamicSequenceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C693AED42C2520CC00CFAF67 /* DynamicSequenceList.cpp */; };
@@ -50,6 +52,11 @@
 		C65C61DF2C3BEBC300810FEA /* HeadLinkQueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HeadLinkQueue.hpp; sourceTree = "<group>"; };
 		C65C61E12C3CD4AC00810FEA /* LinkQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkQueue.cpp; sourceTree = "<group>"; };
 		C65C61E22C3CD4AC00810FEA /* LinkQueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkQueue.hpp; sourceTree = "<group>"; };
+		C65C61E42C3D3C8500810FEA /* DynamicSequenceString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DynamicSequenceString.cpp; sourceTree = "<group>"; };
+		C65C61E52C3D3C8500810FEA /* DynamicSequenceString.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DynamicSequenceString.hpp; sourceTree = "<group>"; };
+		C65C61E72C3D3E7000810FEA /* LinkString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkString.cpp; sourceTree = "<group>"; };
+		C65C61E82C3D3E7000810FEA /* LinkString.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkString.hpp; sourceTree = "<group>"; };
+		C65C61EB2C3D3F9F00810FEA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C693AEC72C21333F00CFAF67 /* Structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Structure; sourceTree = BUILT_PRODUCTS_DIR; };
 		C693AECA2C21333F00CFAF67 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C693AED12C251A0600CFAF67 /* SequenceList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SequenceList.cpp; sourceTree = "<group>"; };
@@ -82,6 +89,10 @@
 			children = (
 				C65C61D22C33D3AB00810FEA /* SequenceString.cpp */,
 				C65C61D32C33D3AB00810FEA /* SequenceString.hpp */,
+				C65C61E42C3D3C8500810FEA /* DynamicSequenceString.cpp */,
+				C65C61E52C3D3C8500810FEA /* DynamicSequenceString.hpp */,
+				C65C61E72C3D3E7000810FEA /* LinkString.cpp */,
+				C65C61E82C3D3E7000810FEA /* LinkString.hpp */,
 			);
 			path = string;
 			sourceTree = "<group>";
@@ -111,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				C693AEC92C21333F00CFAF67 /* Structure */,
+				C65C61EB2C3D3F9F00810FEA /* README.md */,
 				C693AEC82C21333F00CFAF67 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -250,7 +262,9 @@
 			files = (
 				C693AED62C2520CC00CFAF67 /* DynamicSequenceList.cpp in Sources */,
 				C65C61CD2C33CCAC00810FEA /* SequenceStack.cpp in Sources */,
+				C65C61E62C3D3C8500810FEA /* DynamicSequenceString.cpp in Sources */,
 				C693AECB2C21333F00CFAF67 /* main.cpp in Sources */,
+				C65C61E92C3D3E7000810FEA /* LinkString.cpp in Sources */,
 				C65C61D42C33D3AB00810FEA /* SequenceString.cpp in Sources */,
 				C693AEEF2C329E0B00CFAF67 /* StaticLinkList.cpp in Sources */,
 				C693AED32C251A0600CFAF67 /* SequenceList.cpp in Sources */,
