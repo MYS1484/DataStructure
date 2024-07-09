@@ -9,17 +9,17 @@
 #define LinkList_hpp
 
 #include <iostream>
-typedef int ElementType;
+typedef int ElemType;
 
 #define MaxSize 10   // define maxinum length
 typedef struct LNode{
-    ElementType data;
+    ElemType data;
     struct LNode *next;
 }LNode, *LinkList;
 
 bool InitList(LinkList &L);
-bool InsertList(LinkList &L, int i,ElementType e);
-bool DeleteList(LinkList &L, int i,ElementType &e);
+bool InsertList(LinkList &L, int i,ElemType e);
+bool DeleteList(LinkList &L, int i,ElemType &e);
 
 // 头插法
 LinkList List_HeadInsert(LinkList &L);
@@ -27,6 +27,6 @@ LinkList List_HeadInsert(LinkList &L);
 LinkList List_TailInsert(LinkList &L);
 
 bool InitCycleLinkList(LinkList &L);
-bool isEmptyCycleLinkList(LinkList L);
-bool isTailCycleLinkList(LinkList L, LNode *p);
+bool IsEmptyCycleLinkList(LinkList L);
+bool IsTailCycleLinkList(LinkList L, LNode *p);
 #endif /* LinkList_hpp */

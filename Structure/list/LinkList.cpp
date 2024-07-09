@@ -12,7 +12,7 @@ bool InitList(LinkList &L){
     return true;
 }
 
-bool InsertList(LinkList &L, int i, ElementType e){
+bool InsertList(LinkList &L, int i, ElemType e){
     if (i<1){
         return false;
     }
@@ -39,7 +39,7 @@ bool InsertList(LinkList &L, int i, ElementType e){
     return true;
 }
 
-bool DeleteList(LinkList &L, int i, ElementType &e){
+bool DeleteList(LinkList &L, int i, ElemType &e){
     if(L==NULL || i<1){
         return false;
     }
@@ -108,7 +108,7 @@ bool InitCycleLinkList(LinkList &L){
     return true;
 }
 
-bool isEmptyCycleLinkList(LinkList L){
+bool IsEmptyCycleLinkList(LinkList L){
     if (L==NULL || L->next == L) {
         return true;
     }else{
@@ -116,7 +116,7 @@ bool isEmptyCycleLinkList(LinkList L){
     }
 }
 
-bool isTailCycleLinkList(LinkList L, LNode *p){
+bool IsTailCycleLinkList(LinkList L, LNode *p){
     if (p->next==L){
         return true;
     }else{
