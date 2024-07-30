@@ -104,6 +104,22 @@ int TreeDepth(BiTree T){
 
 void LevelOrder(BiTree T){
     LinkQueue Q;
-    
-    
+}
+
+// 右自旋
+BiTree rightRotate(BiTree T){
+    BiTree x = T->lchild;
+    BiTree T2 = x->rchild;
+    T->lchild =T2;
+    x->rchild = T;
+    return x;
+}
+
+// 左自旋
+BiTree leftRotate(BiTree T){
+    BiTree x = T->rchild;
+    BiTree T2 = x->lchild;
+    T->rchild = T2;
+    x->lchild = T;
+    return x;
 }

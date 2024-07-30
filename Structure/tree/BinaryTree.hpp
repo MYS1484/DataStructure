@@ -42,4 +42,7 @@ int TreeDepth(BiTree T);
 
 void LevelOrder(BiTree T);
 
+// 自旋
+BiTree rightRotate(BiTree T);
+BiTree leftRotate(BiTree T);
 #endif /* BinaryTree_hpp */
