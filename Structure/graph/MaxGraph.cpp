@@ -74,7 +74,7 @@ void RemoveEdge(MGraph &G, int x, int y) {
     }
 }
 
-// 求图G中顶点x的第一个邻接点，若有则返回顶点号。若x没有邻接点或图中不存在X,则返回-1
+// 求图G中顶点x的第一个邻接点，若有则返回顶点号。若x没有邻接点或图中不存在x,则返回-1
 int FirstNeighbor(MGraph G, int x) {
     if (x >= 0 && x < G.vexnum) {
         for (int i = 0; i < G.vexnum; i++) {
@@ -113,6 +113,26 @@ void Set_edge_value(MGraph &G, int x, int y, EdgeType v) {
     }
 }
 
-void BFS_MIN_Distance(MGraph G, int u){
-    
+// 广度优先遍历
+void BFS_MIN_Distance(MGraph G, int v){
+    for (int i=0; i<G.vexnum; ++i) {
+        visited[i] = false;
+    }
+    InitLinkQueue(Q);
+    for (int i=0; i<G.vexnum; ++i) {
+        if(!visited[i]){
+            
+        }
+    }
+}
+
+void BFS(MGraph G, int v){
+    visit(v);
+    visited[v]=true;
+    EnLinkQueue(Q, v);
+}
+
+
+void visit(int v){
+    printf("element is %d", v);
 }

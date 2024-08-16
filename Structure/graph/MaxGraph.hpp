@@ -9,16 +9,21 @@
 #define MaxGraph_hpp
 
 #include <iostream>
+#include "LinkQueue.hpp"
 #include <stdbool.h>
 #include <string.h>
+//using namespace std;
 #define MaxVertexNum 100
 #define INFINITY 999999 // 表示无穷大
-typedef char VertexType;
-typedef int EdgeType;
+bool visited[MaxVertexNum];//访问标记数组
+LinkQueue Q;
+typedef char VertexType; // 顶点
+typedef int EdgeType;  // 边
+// 无向图
 typedef struct {
     VertexType Vex[MaxVertexNum];
     EdgeType Edge[MaxVertexNum][MaxVertexNum];
-    int vexnum,arcnum;
+    int vexnum,arcnum; //顶点个数和弧数
 }MGraph;
 
 // 判断图G是否存在边<x,y>或(x,y)
@@ -45,5 +50,5 @@ void Set_edge_value(MGraph &G,int x,int y,int v);
 // Breadth First Search
 void BFS_MIN_Distance(MGraph G, int u);
 
-
+void visit(int v);
 #endif /* MaxGraph_hpp */

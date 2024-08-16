@@ -31,15 +31,15 @@ BiTree insertNode(BiTree root, ElemType data) {
     return root;
 }
 
-// 查找一个结点
+// 查找一个结点(递归实现)
 BiTNode* searchNode(BiTree root, ElemType key) {
     if (root == NULL || root->data == key) {
         return root;
     }
     if (key < root->data) {
-        return searchNode(root->lchild, key);
+        return searchNode(root->lchild, key); //在左子树中查找
     } else {
-        return searchNode(root->rchild, key);
+        return searchNode(root->rchild, key); //在右子树中查找
     }
 }
 
