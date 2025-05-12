@@ -1,0 +1,10 @@
+# 忽略所有的 log 文件
+*.log
+*.exe
+
+# 忽略编译输出目录
+/.vscode/
+
+# 忽略操作系统生成的文件
+Structure/main.exe
+Structure/.vscode/tasks.json
