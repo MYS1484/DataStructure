@@ -6,5 +6,5 @@
 /.vscode/
 
 # 忽略操作系统生成的文件
-Structure/main.exe
-Structure/.vscode/tasks.json
+Structure/*.exe
+Structure/.vscode

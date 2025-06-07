@@ -12,10 +12,10 @@ void InitSequenceStack(SqStack &S){
 }
 
 bool IsEmptySequenceStack(SqStack S){
-    if(S.top == -1){    // æ ˆç©º
+    if(S.top == -1){    // Õ»¿Õ
         return true;
     }else{
-        return false;  // æ ˆéç©º
+        return false;  // Õ»·Ç¿Õ
     }
 }
 
@@ -50,7 +50,7 @@ bool bracketCheck(ElemType str[], int length){
             }
             ElemType topElement;
             SequenceStackPop(S, topElement);
-            printf("æ ˆé¡¶å…ƒç´ :%c\n", topElement);
+            printf("Õ»¶¥ÔªËØ:%c\n", topElement);
             if (str[i] == ')' && topElement != '('){
                 return false;
             }

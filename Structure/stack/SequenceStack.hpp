@@ -9,6 +9,7 @@
 #define SequenceStack_hpp
 
 #include <iostream>
+using namespace std;
 #define MaxSize 30
 typedef char ElemType;
 
