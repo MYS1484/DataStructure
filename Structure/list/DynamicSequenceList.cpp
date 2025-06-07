@@ -11,7 +11,7 @@
 void InitList(DynSqList &L) {
     L.data = (ElemType *)malloc(InitSize * sizeof(ElemType));
     L.MaxSize = InitSize;
-    L.length = 0;       //椤哄簭琛ㄥ垵濮嬮暱搴︿负0
+    L.length = 0;       //顺序表初始长度为0
 }
 
 void IncreaseList(DynSqList &L, int len){

@@ -1,3 +1,4 @@
+
 //
 //  LinkList.hpp
 //  Structure
@@ -21,9 +22,9 @@ bool InitList(LinkList &L);
 bool InsertList(LinkList &L, int i,ElemType e);
 bool DeleteList(LinkList &L, int i,ElemType &e);
 
-// 头插法
+// ͷ�巨
 LinkList List_HeadInsert(LinkList &L);
-// 尾插法
+// β�巨
 LinkList List_TailInsert(LinkList &L);
 
 bool InitCycleLinkList(LinkList &L);

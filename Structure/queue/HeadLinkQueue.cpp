@@ -21,26 +21,26 @@ bool IsEmptyHeadLinkQueue(HeadLinkQueue Q){
     }
 }
 
-// å…¥é˜Ÿ
+// Èë¶Ó
 bool EnHeadLinkQueue(HeadLinkQueue &Q, ElemType e){
-    // ä¸è¦†ç›–å¤´èŠ‚ç‚¹çš„åŽŸå› :å› ä¸ºæœ¬èº«å°±æ˜¯å¸¦å¤´èŠ‚ç‚¹çš„åˆå§‹åŒ–æ–¹å¼ï¼Œé˜²æ­¢å‡ºé˜Ÿçš„æ—¶å€™æŠŠå¤´èŠ‚ç‚¹æžæ²¡äº†
+    // ²»¸²¸ÇÍ·½ÚµãµÄÔ­Òò:ÒòÎª±¾Éí¾ÍÊÇ´øÍ·½ÚµãµÄ³õÊ¼»¯·½Ê½£¬·ÀÖ¹³ö¶ÓµÄÊ±ºò°ÑÍ·½Úµã¸ãÃ»ÁË
     LNode *s = (LNode *)malloc(sizeof(LNode));
     s->next = NULL;
     s->data = e;
     Q.rear->next = s;
-    // å› ä¸ºQ.rearå·²ç»å¾€åŽç§»åŠ¨ä¸€ä½ï¼Œåˆ™è¦æŒ‡å‘s
+    // ÒòÎªQ.rearÒÑ¾­ÍùºóÒÆ¶¯Ò»Î»£¬ÔòÒªÖ¸Ïòs
     Q.rear = s;
     return true;
 }
 
-// å‡ºé˜Ÿ
+// ³ö¶Ó
 bool DeHeadLinkQueue(HeadLinkQueue &Q, ElemType &e){
     if (IsEmptyHeadLinkQueue(Q)){
         return false;
     }
     LNode *p = Q.front->next;
     e = p->data;
-    // ä¸ç”¨Q.front = p,åŽŸå› æ˜¯ä¿ç•™å…¶å¤´èŠ‚ç‚¹
+    // ²»ÓÃQ.front = p,Ô­ÒòÊÇ±£ÁôÆäÍ·½Úµã
     Q.front->next = p->next;
     if (Q.rear == p){
         Q.front = Q.rear;

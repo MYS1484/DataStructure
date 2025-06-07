@@ -5,7 +5,7 @@
 //  Created by Yusuf Mike  on 7/2/24.
 //
 
-// å…±äº«æ ˆ
+// ¹²ÏíÕ»
 #include "ShareStack.hpp"
 
 void InitShareStack(ShStack &S){

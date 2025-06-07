@@ -45,7 +45,7 @@ bool DeleteList(LinkList &L, int i, ElemType &e){
     }
     LNode *p = L;
     if (i==1){
-        //å¤„ç†å•èŠ‚ç‚¹çš„æƒ…å†µ
+        //´¦Àíµ¥½ÚµãµÄÇé¿ö
         if(p->next ==  NULL){
             e=p->data;
             L = NULL;
@@ -57,7 +57,7 @@ bool DeleteList(LinkList &L, int i, ElemType &e){
         }
     }
     int j=2;
-    //æ‹¿åˆ°è¦åˆ é™¤çš„èŠ‚ç‚¹
+    //ÄÃµ½ÒªÉ¾³ıµÄ½Úµã
     while (j<i && p!=NULL) {
         p = p->next;
         j++;
@@ -67,7 +67,7 @@ bool DeleteList(LinkList &L, int i, ElemType &e){
     return true;
 }
 
-// å¤´æ’æ³•
+// Í·²å·¨
 LinkList List_HeadInsert(LinkList &L){
     int x;
     L = (LNode *)malloc(sizeof(LNode));
@@ -83,7 +83,7 @@ LinkList List_HeadInsert(LinkList &L){
     return L;
 }
 
-// å°¾æ’æ³•
+// Î²²å·¨
 LinkList List_TailInsert(LinkList &L){
     LNode *s, *r;
     int x;
@@ -123,4 +123,3 @@ bool IsTailCycleLinkList(LinkList L, LNode *p){
         return false;
     }
 }
-

@@ -15,7 +15,7 @@ bool InitDLinkList(DLinkList &L){
     return true;
 }
 
-// åœ¨pç»“ç‚¹åŽæ’å…¥sç»“ç‚¹
+// ÔÚp½áµãºó²åÈës½áµã
 bool InsertNextDNode(DNode *p, DNode *s){
     if(p==NULL || s==NULL){
         return false;
@@ -37,13 +37,13 @@ bool DestoryList(DLinkList &L){
     return true;
 }
 
-// åˆ é™¤pç»“ç‚¹çš„åŽç»§èŠ‚ç‚¹
+// É¾³ýp½áµãµÄºó¼Ì½Úµã
 bool DeleteNextDNode(DNode *p){
     if (p==NULL) return false;
     DNode *q = p->next;
     if (q==NULL) return false;
     p->next=q->next;
-    if (q->next!= NULL) // qä¸æ˜¯æœ€åŽä¸€ä¸ªç»“ç‚¹
+    if (q->next!= NULL) // q²»ÊÇ×îºóÒ»¸ö½áµã
         q->next->prior = p;
     free(q);
     return true;

@@ -12,7 +12,7 @@
 #include <iostream>
 typedef int ElemType;
 
-// å¾ªçŽ¯é“¾è¡¨
+// Ñ­»·Á´±í
 struct Node {
     ElemType data;
     int next;

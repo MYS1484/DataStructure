@@ -1,3 +1,4 @@
+
 //
 //  SequenceStack.hpp
 //  Structure
@@ -9,7 +10,6 @@
 #define SequenceStack_hpp
 
 #include <iostream>
-using namespace std;
 #define MaxSize 30
 typedef char ElemType;
 
@@ -21,10 +21,10 @@ typedef struct {
 void InitSequenceStack(SqStack &S);
 bool IsEmptySequenceStack(SqStack S);
 
-bool SequenceStackPush(SqStack &S, ElemType x);  // å…¥æ ˆ
-bool SequenceStackPop(SqStack &S, ElemType &x);   // å‡ºæ ˆ
-bool GetSequenceStackTop(SqStack S, ElemType x); // è¯»å–æ ˆé¡¶å…ƒç´ 
+bool SequenceStackPush(SqStack &S, ElemType x);  // ÈëÕ»
+bool SequenceStackPop(SqStack &S, ElemType &x);   // ³öÕ»
+bool GetSequenceStackTop(SqStack S, ElemType x); // ¶ÁÈ¡Õ»¶¥ÔªËØ
 
-bool bracketCheck(ElemType str[], int length);   // æ‹¬å·åŒ¹é…
+bool bracketCheck(ElemType str[], int length);   // À¨ºÅÆ¥Åä
 
 #endif /* SequenceStack_hpp */

@@ -20,9 +20,9 @@ typedef struct {
 void InitSequenceQueue(SqQueue &Q);
 bool IsEmptySequenceQueue(SqQueue Q);
 bool IsFullSequenceQueue(SqQueue Q);
-// 鍏ラ槦
+// 入队
 bool EnSequenceQueue(SqQueue &Q, ElemType e);
-// 鍑洪槦
+// 出队
 bool DeSequenceQueue(SqQueue &Q, ElemType &e);
 bool GetSequenceQueueHead(SqQueue Q, ElemType &x);
 

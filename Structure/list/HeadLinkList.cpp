@@ -42,7 +42,7 @@ bool DeleteHeadList(HeadLinkList &L, int i,ElemType &e){
     }
     int j = 1;
     LNode *p = L;
-    // 要拿到要删除的节点
+    // Ҫ�õ�Ҫɾ���Ľڵ�
     while (j<i && p!= NULL) {
         p = p->next;
         j++;

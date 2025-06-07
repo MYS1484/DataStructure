@@ -13,9 +13,9 @@ typedef int ElemType;
 
 #define MaxSize 10   // define maxinum length
 typedef struct SqList{
-    ElemType data[MaxSize]; // 鐢ㄩ潤鎬佺殑鏁扮粍瀛樻斁鏁版嵁鍏冪礌
-    int length;        // 椤哄簭琛ㄧ殑褰撳墠闀垮害
-};               // 椤哄簭琛ㄧ殑绫诲瀷瀹氫箟
+    ElemType data[MaxSize]; // 用静态的数组存放数据元素
+    int length;        // 顺序表的当前长度
+};               // 顺序表的类型定义
 
 void InitList(SqList &L);
 bool InsertList(SqList &L, int i,ElemType e);

@@ -19,7 +19,7 @@ typedef struct DynSqList{
 };
 
 void InitList(DynSqList &L);
-void IncreaseList(DynSqList &L, int len); //å¢åŠ åŠ¨æ€æ•°ç»„é•¿åº¦
+void IncreaseList(DynSqList &L, int len); //Ôö¼Ó¶¯Ì¬Êı×é³¤¶È
 
 bool InsertList(DynSqList &L, int i,ElemType e);
 bool DeleteList(DynSqList &L, int i,ElemType &e);

@@ -11,7 +11,7 @@ void InitList(SqList &L) {
     for (int i = 0; i < MaxSize; i++) {
         L.data[i] = 0;
     }
-    L.length = 0;       //椤哄簭琛ㄥ垵濮嬮暱搴︿负0
+    L.length = 0;       //顺序表初始长度为0
 }
 
 bool InsertList(SqList &L, int i, ElemType e){

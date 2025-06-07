@@ -18,9 +18,9 @@ typedef struct {
 void InitHeadLinkQueue(HeadLinkQueue &Q);
 bool IsEmptyHeadLinkQueue(HeadLinkQueue Q);
 
-// 鍏ラ槦
+// 入队
 bool EnHeadLinkQueue(HeadLinkQueue &Q, ElemType e);
-// 鍑洪槦
+// 出队
 bool DeHeadLinkQueue(HeadLinkQueue &Q, ElemType &e);
 
 #endif /* HeadLinkQueue_hpp */

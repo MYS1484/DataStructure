@@ -18,9 +18,9 @@ typedef struct {
 void InitLinkQueue(LinkQueue &Q);
 bool IsEmptyLinkQueue(LinkQueue Q);
 
-// 鍏ラ槦
+// 入队
 bool EnLinkQueue(LinkQueue &Q, ElemType e);
-// 鍑洪槦
+// 出队
 bool DeLinkQueue(LinkQueue &Q, ElemType &e);
 
 #endif /* LinkQueue_hpp */

@@ -20,7 +20,7 @@ bool IsEmptyLinkQueue(LinkQueue Q){
     }
 }
 
-// 鍏ラ槦
+// 入队
 bool EnLinkQueue(LinkQueue &Q, ElemType e){
     LNode *s = (LNode *)malloc(sizeof(LNode));
     s->data = e;
@@ -34,7 +34,7 @@ bool EnLinkQueue(LinkQueue &Q, ElemType e){
     return true;
 }
 
-// 鍑洪槦
+// 出队
 bool DeLinkQueue(LinkQueue &Q, ElemType &e){
     if(IsEmptyLinkQueue(Q)){
         return false;
